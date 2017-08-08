@@ -18,3 +18,9 @@ It works on: http://127.0.0.1:8000/
 
 Start App:$ python manager.py start learning_logs
 
+Modify the database so it can store data of learning_logs:
+$ python manage.py makemigragations learning_logs
+$ python manage.py migrate
+
+Create superuser: $ python manage.py createsuperuser
+
