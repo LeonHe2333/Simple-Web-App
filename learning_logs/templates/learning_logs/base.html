@@ -1,0 +1,8 @@
+<p>
+	<a herf="{% url 'learning_logs:index' %}">Learning Log</a> - <!--Dash!!!!-->
+	<!-- matching the url pattern defined in learning_logs/urls.py with name 'index'-->
+	<a herf="{% url 'learning_logs:topics' %}">Topics:</a>
+</p>
+
+{% block content %}{% endblock content %}
+<!--this block named content, children template will define what kind of information that goes into the block-->
