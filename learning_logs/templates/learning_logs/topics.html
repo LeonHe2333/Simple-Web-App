@@ -1,0 +1,13 @@
+{% extends "learning_logs/base.html" %}
+
+{% block content %}
+	<p>Topics</p>
+	<ul> <!--unordered list-->
+		{% for topic in topics %}
+			<li>{{ topic }}</li> <!--<li> list-->
+			<!--Braces just indicate to Django that we’re using a template variable.-->
+		{% empty %}
+			<li>No topics have been added yet.</li>
+		{% endfor %}
+	</ul>
+{% endblock content %}
