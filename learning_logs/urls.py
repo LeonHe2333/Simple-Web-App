@@ -7,6 +7,7 @@ from . import views
 urlpatterns = [
 	# Home Page
 	url(r'^$', views.index,name='index'),
+	url(r'^topics/$', views.topics,name='topics'),
 	
 	#The r tells Python to interpret the following string as a raw string, 
 	#and the quotes tell Python where the regular expression begins and ends. 
